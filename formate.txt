@@ -1,0 +1,8 @@
+nav bar :
+ 1.home 
+ 2.admissions
+ 3.campus life
+ 4.about us 
+ 5.student life
+ 6. contact us
+ 
