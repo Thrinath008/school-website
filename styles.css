@@ -1,3 +1,14 @@
+:root {
+    --primary-color: #075133;
+    --primary-dark: #0B3D2E;
+    --secondary-color: #6F9F8D;
+    --gold: #C9A227;
+    --navy: #0B3D2E;
+    --bg-light: #F5F7F6;
+    --text-dark: #0B3D2E;
+    --text-muted: #6F9F8D;
+    --transition: all 0.3s ease;
+}
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -116,4 +127,342 @@
     font-weight: 800;
     color: var(--navy);
     margin-bottom: 1rem;
+}
+
+.section-badge {
+    display: inline-block;
+    background: rgba(7, 81, 51, 0.1);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+
+
+
+.about-section {
+    background: var(--bg-light);
+}
+
+.about-image-wrapper {
+    position: relative;
+}
+
+.about-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 81, 51, 0.1);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.about-image-wrapper img {
+    border-radius: 16px;
+}
+
+.custom-blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text-dark);
+    border-left: 4px solid var(--gold);
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+
+.admission-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: var(--transition);
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admission-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.admission-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.campus-card {
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.campus-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.campus-card:hover .campus-image {
+    transform: scale(1.1);
+}
+
+.campus-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 2rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.campus-card:hover .campus-overlay {
+    opacity: 1;
+}
+
+
+.student-life-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    height: 100%;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.student-life-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.student-life-card h4 {
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.student-life-card ul li {
+    padding: 0.5rem 0;
+    color: var(--text-muted);
+}
+
+
+.announcements-section {
+    background: white;
+}
+
+.announcement-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.announcement-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-content h5 {
+    color: var(--navy);
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.announcement-card:hover .announcement-content h5 {
+    color: var(--primary-color);
+}
+
+
+.contact-info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact-form-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border: 2px solid #e2e8f0;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(7, 81, 51, 0.15);
+}
+
+
+.footer-section {
+    background: var(--navy);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-3px);
+}
+
+
+
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .custom-blockquote {
+        font-size: 1.1rem;
+    }
+    
+    .campus-card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section .badge {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .scroll-top-btn {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
