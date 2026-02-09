@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Infrastructure & Facilities - Delhi Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="campus.css">
+</head>
+<body onscroll="handleNavbar()">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-icon">
+                    <img src="images/logo.png" width="40px">
+                </div>
+                <span class="brand-text ms-2">Delhi public school</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="campus.html">Campus Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#student-life">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-lg-3 mt-2 mt-lg-0">Apply Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center text-white">
+            <span class="badge bg-white/20 text-white px-3 py-2 mb-3">Campus Infrastructure</span>
+            <h1 class="display-1 fw-bold mb-4">World-Class<br/>Learning Environments</h1>
+            <p class="lead mb-4">Experience a campus architecture designed to inspire creativity, foster excellence, and support holistic development.</p>
+            <button class="btn btn-primary btn-lg">
+                <span class="material-symbols-outlined me-2">map</span>
+                Explore Campus Map
+            </button>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <h2 class="fw-bold mb-3">Our Facilities</h2>
+                    <p class="text-muted">State-of-the-art infrastructure facilitating academic, athletic, and artistic pursuits.</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="btn btn-outline-secondary me-2">
+                        <span class="material-symbols-outlined">grid_view</span>
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                        <span class="material-symbols-outlined">list</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="masonry-grid">
+                <div class="masonry-item facility-card">
+                    <div class="facility-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfVNhLlu0hmUy2vZ638w-YFLNvdYuWbdoAA_5RLs7IIKXzKCl5BWDw4jygiVaZrVc3ocCK3fbsGjwtooga3MZ7txrUIMWZNv8WVAz_tAh6kNRELtT3FXRJtiQtb2nhlXTjuiuvtbdkIeX7odf2aDvVLltsEOsFnOwgLtihITbHZOmCWb8oynGroEVkR3UqvqJknDtGLjBS74omsNs5MJvRbRghwcLKnlNUXvqfzLV4XUA03NBM1jedlovTxTKIuEHieTjYLplLcg');">
+                        <div class="facility-overlay">
+                            <div class="facility-content">
+                                <span class="text-primary small fw-bold">ACADEMIC</span>
+                                <h3 class="text-white h4 fw-bold">The Athenaeum</h3>
+                                <p class="text-white small">A 20,000-book digital and physical library featuring quiet study pods and collaborative research zones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item facility-card">
+                    <div class="facility-image square" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsm5Xe-kRQ0B1opH_ShtGkkzwxAoKxdYcLgg6GvZ4Wur899fvAaJDOsPBVYMR0ZcTpKXajZYFKcfOJJCphT700T7m4WtcdZlY9HuOk3tbzmSdcjFhd2ebXC9k9aKrPVrH1LxE7QJy8T08WYCXe0xnxE6v5kyA6zNpeDm31VTws6xkY1qgutefo2BzeSFT428FRvJGoiPzeXlBoTCy5HCazooQXnHYaO1FKnGxOW0SkXY6Qaejhk3YIKvAMNAqp5JYKl-lJc8GSkg');">
+                        <div class="facility-overlay">
+                            <div class="facility-content">
+                                <span class="text-primary small fw-bold">INNOVATION</span>
+                                <h3 class="text-white h4 fw-bold">The Makerspace</h3>
+                                <p class="text-white small">Advanced robotics, 3D printing, and coding labs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item facility-card">
+                    <div class="facility-image landscape" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIw22yPSBnYK8Z73hJXGNHXlxBKAinFWwi9cxQjCqg0Qq2lSns2i9B2sV66m6QGWp_uCi8sJj97eOFPWcBhvwRnPUJ_HlZx9MoOPuSMr1xL-xhtZnLJJXIrrtWzQ73RJKuTN3YyuM3WZl7iBWrr626-7lye8HSCmtSPd-zB38X_9GnZuG_BIfbc85qm39Tvr1owib-5sNs1j_cfmXgvXm98IfsyOOa3eAxMJENoJzOJR6ju_sJ5Yyz5nWnYW4Jen8yEJFGypPBvA');">
+                        <div class="facility-overlay">
+                            <div class="facility-content">
+                                <span class="text-primary small fw-bold">ATHLETICS</span>
+                                <h3 class="text-white h4 fw-bold">Aquatic Center</h3>
+                                <p class="text-white small">Olympic-size temperature-controlled pool for competitive training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item facility-card">
+                    <div class="facility-image wide" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB67jzteozjl7hOFP1Q4-X7Et7nAIG6JxqDBH3WZtj7Z1PvoeKcCJdMeaAMx9kRKuDtS2sIaNp-G3b877BoAw0jHsiW6HMyKK1Bf4pgN1a-xRjjOp5Hzt9NuhTs3yafOGX9PT0czYx6Eg_bxG43ylczDsxveAsiBVzUUl_q4hG8dxcgdyBkDvPaO__h3o-iSETz4mTPt88BO6WqZRmNegkcLrPu4x2u6da-faE2mQL7D1xA2Bk17KSRhaQtyzv7JB_i-KCxZhQxgg');">
+                        <div class="facility-overlay">
+                            <div class="facility-content">
+                                <span class="text-primary small fw-bold">ARTS</span>
+                                <h3 class="text-white h4 fw-bold">Performing Arts Center</h3>
+                                <p class="text-white small">Professional acoustics and seating for 500 guests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item facility-card">
+                    <div class="facility-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHsGs2t6p5tsWTkFgqLcRhy4C6iY1aGI43FPZEqv8Zz8z2nsoEDPztgJVxx1wXUKMDTvK7TxbndV4sFmbBFw-ck8nrvrdvfYimgmjwqxp5lY8BjAtlO65c6SqZkkIvwFy0P703BN6rV9PwBkdorS1OgBJaFcKfOE9QpyI88f7YabQ3bgnv0HCRfsQf9dNotFu_EZSdWsqwE0C16I2BT5r-27YasSRPmxdg8FkrmskmOQxa-U9j2FDWzaEz0L_fiy6TDqEXGNcHWw');">
+                        <div class="facility-overlay">
+                            <div class="facility-content">
+                                <span class="text-primary small fw-bold">ATHLETICS</span>
+                                <h3 class="text-white h4 fw-bold">Sports Complex</h3>
+                                <p class="text-white small">FIFA standard football pitch and IAAF certified tracks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-link text-primary text-decoration-none fw-bold">
+                    View All Facilities
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h2 class="fw-bold mb-3">Uncompromised <span class="text-primary">Safety</span></h2>
+                    <p class="text-muted">We prioritize the safety and well-being of our students above all else. Our campus employs top-tier security measures to ensure a secure learning environment.</p>
+                    <button class="btn btn-outline-primary">
+                        <span class="material-symbols-outlined me-2">policy</span>
+                        View Safety Protocols
+                    </button>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="bg-primary bg-opacity-10 rounded p-3 d-inline-block mb-3">
+                                        <span class="material-symbols-outlined text-primary">security</span>
+                                    </div>
+                                    <h5 class="fw-bold">Gated Campus</h5>
+                                    <p class="text-muted small">Secure entry and exit points monitored by security personnel around the clock with strict ID checks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="bg-primary bg-opacity-10 rounded p-3 d-inline-block mb-3">
+                                        <span class="material-symbols-outlined text-primary">videocam</span>
+                                    </div>
+                                    <h5 class="fw-bold">24/7 Surveillance</h5>
+                                    <p class="text-muted small">Comprehensive CCTV coverage across all common areas, hallways, and perimeter fencing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="bg-primary bg-opacity-10 rounded p-3 d-inline-block mb-3">
+                                        <span class="material-symbols-outlined text-primary">medical_services</span>
+                                    </div>
+                                    <h5 class="fw-bold">On-site Infirmary</h5>
+                                    <p class="text-muted small">Fully equipped medical room with a qualified nurse available during school hours for emergencies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="card border-0 shadow">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <div class="transport-map position-relative">
+                            <div class="transport-overlay"></div>
+                            <div class="position-absolute bottom-0 start-0 end-0 p-4">
+                                <div class="bg-white rounded p-3 shadow">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="material-symbols-outlined text-primary">directions_bus</span>
+                                        <h6 class="fw-bold mb-0">Live Tracking Available</h6>
+                                    </div>
+                                    <p class="small text-muted mb-0">Parents can track school buses in real-time via our dedicated mobile app.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-body p-4">
+                            <span class="text-primary small fw-bold text-uppercase">Transport</span>
+                            <h2 class="fw-bold mb-3">Seamless Connectivity</h2>
+                            <p class="text-muted mb-4">Our fleet of air-conditioned, GPS-enabled buses covers all major routes across the city, ensuring a comfortable and safe commute for your child.</p>
+                            
+                            <div class="accordion mb-4" id="routeAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#route1">
+                                            North Route (Downtown - Campus)
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#route2">
+                                            West Route (Suburbia - Campus)
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#route3">
+                                            East Route (Lakeside - Campus)
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-link text-primary text-decoration-none p-0">
+                                Download Full Route Map
+                                <span class="material-symbols-outlined small">download</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">See it to believe it.</h2>
+                    <p class="text-muted mb-4">We invite you to visit our campus and experience the atmosphere firsthand.</p>
+                    <button class="btn btn-primary btn-lg">Schedule a Campus Visit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-graduation-cap text-primary fs-3 me-2"></i>
+                        <h4 class="mb-0">Delhi Public School</h4>
+                    </div>
+                    <p class="text-white-50">
+                        Delhi Public School is committed to academic excellence, strong values, discipline,
+                        and preparing students to succeed in a global future.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Academics</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="faculty.html">Faculty & Staff</a></li>
+                        <li><a href="#">College Counseling</a></li>
+                        <li><a href="#">Library</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Admissions</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html#admissions">Apply Now</a></li>
+                        <li><a href="#">Tuition & Aid</a></li>
+                        <li><a href="index.html#contact">Visit Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="campus.html">Campus Life</a></li>
+                        <li><a href="index.html#student-life">Student Life</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="mb-3">Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">© 2026 Delhi Public School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 me-3">Terms of Use</a>
+                    <a href="#" class="text-white-50">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleNavbar() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        }
+    </script>
+</body>
+</html>

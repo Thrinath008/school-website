@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body onscroll="handleNavbar()">
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#home">
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#admissions">Admissions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#campus-life">Campus Life</a>
+                        <a class="nav-link" href="campus.html">Campus Life</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#student-life">Student Life</a>
@@ -48,9 +48,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <button class="btn btn-primary ms-lg-3 mt-2 mt-lg-0">Apply Now</button>
             </div>
@@ -60,7 +60,7 @@
         <div class="hero-overlay"></div>
         <div class="row bg-dark align-items-center min-vh-100">
             <div class="col mx-auto hero-content text-center">
-                
+
                 <h1 class="display-3 fw-bold text-white mb-4">
                     Shaping the <span class="text-primary-light">Leaders</span> of Tomorrow
                 </h1>
@@ -69,9 +69,14 @@
                     Join a community where curiosity thrives.
                 </p>
                 <div class="hero-buttons">
-                    
+
                     <a href="#contact" class="btn btn-outline-light btn-lg mb-2">Visit Campus</a>
                     <a href="#admissions" class="btn btn-primary btn-lg me-3 mb-2">Start Application</a>
+                </div>
+                <div class="mt-4">
+                    <span class="badge bg-light text-dark me-2">CBSE Curriculum</span>
+                    <span class="badge bg-light text-dark me-2">100% Board Results</span>
+                    <span class="badge bg-light text-dark">Safe & Modern Campus</span>
                 </div>
                 <span class="badge bg-light text-primary mb-3">Established 1954</span>
             </div>
@@ -81,7 +86,7 @@
         </div>
     </section>
 
-    <section class="stats-section py-5">
+    <section class="stats-section section-padding">
         <div class="container">
             <div class="row text-center g-4">
                 <div class="col-6 col-md-3">
@@ -123,13 +128,13 @@
             </div>
         </div>
     </section>
-    <section class="about-section py-5" id="about">
+    <section class="about-section section-padding" id="about">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <div class="about-image-wrapper">
-                        <img src="images/prp.webp"
-                            alt="Principal with students" class="img-fluid rounded-4 shadow-lg" width="90%" >
+                        <img src="images/prp.webp" alt="Principal with students" class="img-fluid rounded-4 shadow-lg"
+                            width="90%">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -140,15 +145,14 @@
                         foster an environment where curiosity thrives and character is built daily."
                     </blockquote>
                     <p class="text-muted mb-4">
-                        At St. Ivel, we believe that academic rigor must be balanced with emotional intelligence.
-                        We are preparing students not just for higher education, but for a life of meaningful
-                        contribution to society.
+                        At Delhi Public School, we believe that academic excellence must be balanced with strong values,
+                        discipline, and holistic development.
                     </p>
                     <div class="d-flex align-items-center">
-                        <img src="/images/prp.webp" alt="Principal Sarah Jenkins"
-                            class="rounded-circle me-3" width="60" height="60">
+                        <img src="/images/prp.webp" alt="Principal Sarah Jenkins" class="rounded-circle me-3" width="60"
+                            height="60">
                         <div>
-                            <h6 class="mb-0 fw-bold">Sarah Jenkins</h6>
+                           <h6 class="mb-0 fw-bold">Principal</h6>
                             <small class="text-muted">Principal</small>
                         </div>
                     </div>
@@ -156,7 +160,7 @@
             </div>
         </div>
     </section>
-        <section id="admissions" class="admissions-section py-5 bg-light">
+    <section id="admissions" class="admissions-section section-padding bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-badge">Join Our Community</span>
@@ -207,7 +211,7 @@
             </div>
         </div>
     </section>
-        <section id="campus-life" class="campus-life-section py-5">
+    <section id="campus-life" class="campus-life-section section-padding">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-badge">Explore Our Campus</span>
@@ -258,7 +262,7 @@
             </div>
         </div>
     </section>
-        <section id="student-life" class="student-life-section py-5 bg-light">
+    <section id="student-life" class="student-life-section section-padding bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-badge">Beyond Academics</span>
@@ -324,7 +328,7 @@
         </div>
     </section>
 
-        <section class="announcements-section py-5">
+    <section class="announcements-section section-padding">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="section-title mb-0">Latest Announcements</h2>
@@ -398,7 +402,7 @@
             </div>
         </div>
     </section>
-        <section id="contact" class="contact-section py-5 bg-light">
+    <section id="contact" class="contact-section section-padding bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-badge">Get In Touch</span>
@@ -412,7 +416,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <h5>Address</h5>
-                        <p class="text-muted">123 Academy Lane<br>Westbridge, MA 02138</p>
+                        <p class="text-muted">Delhi Public School Campus<br>India</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -430,12 +434,12 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h5>Email</h5>
-                        <p class="text-muted">admissions@stivel.edu</p>
+                        <p class="text-muted">info@dps.edu</p>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-6">
                     <div class="contact-form-card">
                         <form>
                             <div class="row g-3">
@@ -470,20 +474,29 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-lg-6">
+                    <div class="map-card h-100 rounded-4 overflow-hidden shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.9242944024604!2d83.13348117613296!3d17.653744283279554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a396e9a4381027f%3A0x91298ca80dbf0793!2sDelhi%20Public%20School%2C%20Visakhapatnam!5e0!3m2!1sen!2sin!4v1770514096548!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0; min-height:450px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-        <footer class="footer-section bg-dark text-white py-5">
+    <footer class="footer-section bg-dark text-white py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fas fa-graduation-cap text-primary fs-3 me-2"></i>
-                        <h4 class="mb-0">St. Ivel Academy</h4>
+                        <h4 class="mb-0">Delhi Public School</h4>
                     </div>
                     <p class="text-white-50">
-                        Empowering the next generation of global leaders through academic excellence,
-                        character development, and innovation.
+                        Delhi Public School is committed to academic excellence, strong values, discipline,
+                        and preparing students to succeed in a global future.
                     </p>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -508,7 +521,7 @@
                     <h6 class="mb-3">Quick Links</h6>
                     <ul class="list-unstyled footer-links">
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#campus-life">Campus Life</a></li>
+                        <li><a href="campus.html">Campus Life</a></li>
                         <li><a href="#student-life">Student Life</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -526,7 +539,7 @@
             <hr class="my-4 bg-white-50">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0 text-white-50">© 2024 St. Ivel Academy. All rights reserved.</p>
+                    <p class="mb-0 text-white-50">© 2026 Delhi Public School. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <a href="#" class="text-white-50 me-3">Privacy Policy</a>
@@ -537,7 +550,16 @@
         </div>
     </footer>
 
-
 </body>
+<script>
+    function handleNavbar() {
+        const nav = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    }
+</script>
 
 </html>

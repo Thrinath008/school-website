@@ -9,14 +9,25 @@
     --text-muted: #6F9F8D;
     --transition: all 0.3s ease;
 }
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #ffffff;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("images/school.webp");
-    opacity: 0.5;
+    background-image: linear-gradient(
+        rgba(7,81,51,0.65),
+        rgba(11,61,46,0.65)
+    ), url("images/school.webp");
     background-size: cover;
     background-position: center;
 }
@@ -88,6 +99,31 @@
 }
 
 
+.nav-link {
+  color: #000000;
+  line-height: 2;
+  position: relative;
+  padding-bottom: 0%;
+}
+
+.nav-link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+background-color: var(--primary-color);
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  transition: width .4s, left .4s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+
 .stats-section {
     padding: 4rem 0;
     background: white;
@@ -122,11 +158,12 @@
 }
 
 
-.section-title {
+ .section-title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--navy);
+    color: var(--primary-dark);
     margin-bottom: 1rem;
+    letter-spacing: -0.5px;
 }
 
 .section-badge {
@@ -142,12 +179,7 @@
     margin-bottom: 1rem;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--navy);
-    margin-bottom: 1rem;
-}
+
 
 
 
@@ -386,6 +418,7 @@
 
 .footer-section {
     background: var(--navy);
+    border-top: 4px solid var(--gold);
 }
 
 .footer-links {
@@ -401,6 +434,25 @@
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     transition: var(--transition);
+}
+
+.footer-links a {
+    position: relative;
+}
+
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: 0.3s;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
 }
 
 .footer-links a:hover {
@@ -465,4 +517,27 @@
         bottom: 20px;
         right: 20px;
     }
+}
+
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
 }
